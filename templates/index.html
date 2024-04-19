@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spam Detection</title>
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+   <div class="container">
+      <h1>Spam Detection</h1>
+      <form action="/" method="post">
+        <label for="mail_message">Enter your mail message:</label><br />
+        <textarea id="mail_message" name="mail_message" rows="4" cols="50"></textarea><br />
+        <input type="submit" value="Predict" />
+      </form>
+
+      <h1>Spam Detection Result</h1>
+      <p>{{ result }}</p>
+      <a href="/">Back to form</a>
+    </div>
+  </body>
+</html>
